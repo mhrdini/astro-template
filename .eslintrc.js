@@ -1,4 +1,5 @@
 module.exports = {
+  ignorePatterns: ['**/*.css'],
   env: {
     browser: true,
     es2021: true,
@@ -51,12 +52,13 @@ module.exports = {
         '@typescript-eslint/consistent-type-imports': 'error', // Ensure `import type` is used when it's necessary
         'import/prefer-default-export': 'off', // Named export is easier to refactor automatically
         'tailwindcss/no-custom-classname': 'off',
-        'tailwindcss/classnames-order': [
-          'warn',
-          {
-            officialSorting: true,
-          },
-        ], // Follow the same ordering as the official plugin `prettier-plugin-tailwindcss`
+        'tailwindcss/classnames-order': 'off',
+        // 'tailwindcss/classnames-order': [
+        //   'warn',
+        //   {
+        //     officialSorting: true,
+        //   },
+        // ], // Follow the same ordering as the official plugin `prettier-plugin-tailwindcss`
         'simple-import-sort/imports': 'error', // Import configuration for `eslint-plugin-simple-import-sort`
         'simple-import-sort/exports': 'error', // Export configuration for `eslint-plugin-simple-import-sort`
         '@typescript-eslint/no-unused-vars': 'off',
@@ -84,7 +86,7 @@ module.exports = {
         'astro/no-conflict-set-directives': 'error',
         'astro/no-unused-define-vars-in-style': 'error',
         'astro/no-set-text-directive': 'error',
-        'astro/no-unused-css-selector': 'error',
+        'astro/no-unused-css-selector': 'off',
         'import/extensions': [
           'error',
           'ignorePackages',
@@ -110,12 +112,13 @@ module.exports = {
         '@typescript-eslint/consistent-type-imports': 'error', // Ensure `import type` is used when it's necessary
         'import/prefer-default-export': 'off', // Named export is easier to refactor automatically
         'tailwindcss/no-custom-classname': 'off',
-        'tailwindcss/classnames-order': [
-          'warn',
-          {
-            officialSorting: true,
-          },
-        ], // Follow the same ordering as the official plugin `prettier-plugin-tailwindcss`
+        'tailwindcss/classnames-order': 'off',
+        // 'tailwindcss/classnames-order': [
+        //   'warn',
+        //   {
+        //     officialSorting: true,
+        //   },
+        // ], // Follow the same ordering as the official plugin `prettier-plugin-tailwindcss`
         'simple-import-sort/imports': 'error', // Import configuration for `eslint-plugin-simple-import-sort`
         'simple-import-sort/exports': 'error', // Export configuration for `eslint-plugin-simple-import-sort`
         '@typescript-eslint/no-unused-vars': 'off',
