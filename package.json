@@ -49,8 +49,7 @@
   "lint-staged": {
     "**/*.{js,ts,jsx,tsx,css,html,astro}": [
       "prettier --single-quote --write",
-      "eslint --fix",
-      "git add"
+      "eslint --fix"
     ]
   }
 }
